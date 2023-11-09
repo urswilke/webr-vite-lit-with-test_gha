@@ -13,7 +13,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "wtr test/**/*.test.js --node-resolve --playwright --browsers chromium firefox",
+    "test:watch": "wtr test/**/*.test.js --watch"
   },
   "dependencies": {
     "@r-wasm/webr": "^0.1.1",
@@ -28,6 +30,11 @@
   "devDependencies": {
     "@babel/core": "^7.21.3",
     "@observablehq/plot": "^0.6.4",
+    "@open-wc/testing": "^3.0.0-next.5",
+    "@web/dev-server": "^0.4.0",
+    "@web/dev-server-legacy": "^2.1.0",
+    "@web/test-runner": "^0.18.0",
+    "@web/test-runner-playwright": "^0.11.0",
     "babel-loader": "^8.3.0",
     "lit-html": "^2.7.0",
     "rollup-plugin-url-resolve": "^0.2.0",
